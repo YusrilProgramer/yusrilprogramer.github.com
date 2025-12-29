@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Rumah Tangga</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To-Do List Rumah Tangga</h1>
+            <p id="current-date"></p>
+        </header>
+        
+        <div class="add-task">
+            <input type="text" id="task-input" placeholder="Tambah kegiatan rumah (e.g., menyapu)">
+            <button id="add-btn">Tambah</button>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="completed">Selesai</button>
+            <button class="filter-btn" data-filter="pending">Belum Selesai</button>
+        </div>
+        
+        <div class="progress">
+            <p>Progress Harian: <span id="progress-percent">0%</span></p>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </div>
+        
+        <ul id="task-list"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
